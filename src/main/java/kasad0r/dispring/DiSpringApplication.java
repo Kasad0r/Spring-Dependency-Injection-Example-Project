@@ -1,9 +1,6 @@
 package kasad0r.dispring;
 
-import kasad0r.dispring.cotrollers.ConstructorInjectedController;
-import kasad0r.dispring.cotrollers.MyController;
-import kasad0r.dispring.cotrollers.PropertyInjectedController;
-import kasad0r.dispring.cotrollers.SetterInjectedController;
+import kasad0r.dispring.cotrollers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +11,10 @@ public class DiSpringApplication {
     public static void main(String[] args) {
 
         ApplicationContext ctx = SpringApplication.run(DiSpringApplication.class, args);
+
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+
+        System.out.println(i18nController.sayHello());
 
         MyController controller = (MyController) ctx.getBean("myController");
 
