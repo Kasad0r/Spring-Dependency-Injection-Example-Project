@@ -17,9 +17,9 @@ public class DiSpringApplication {
 
         MyController controller = (MyController) ctx.getBean("myController");
 
-        String greeting = controller.sayHello();
+        System.out.println("----- Primary");
 
-        System.out.println(greeting);
+        System.out.println(controller.sayHello());
 
         System.out.println("----- Property");
 
