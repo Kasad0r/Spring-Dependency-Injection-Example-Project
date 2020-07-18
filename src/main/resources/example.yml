@@ -1,0 +1,36 @@
+# this is comment
+name: Dima
+
+names: #Comment
+  - Dima
+  - Paul
+  - Ringo
+
+pound_sign: "#"
+
+
+book:
+  author: Joe Buck
+  publisher: random pub.
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no # No, False, FALSE, false
+
+string_val: "This is it`s quote"
+
+colon_str: "my cources: one two three"
+include_new_line: |
+  asdfads
+  f
+  dasf
+  dasf
+  adfadsfadsf
+  asdfadsfadsfadsf
+
+ignore_new_lines: >
+  this is
+  just one long string
