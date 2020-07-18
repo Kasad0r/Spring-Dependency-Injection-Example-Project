@@ -2,6 +2,7 @@ package kasad0r.dispring;
 
 import kasad0r.dispring.cotrollers.*;
 import kasad0r.dispring.examplebeans.FakeDataSource;
+import kasad0r.dispring.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +17,10 @@ public class DiSpringApplication {
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 
         System.out.println(fakeDataSource.getUsername());
+
+        FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
+
+        System.out.println(fakeJmsBroker.getJmsUsername());
         /*
 
         PetController petController = ctx.getBean("petController", PetController.class);
