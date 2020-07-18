@@ -13,14 +13,13 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
-@PropertySources({
+/*@PropertySources({
         @PropertySource("classpath:jms.properties"),
         @PropertySource("classpath:datasource.properties")
-})
+})*/
 public class PropertyConfig {
-
-    @Autowired
-    Environment env;
+/*  @Autowired
+    Environment env;*/
 
     @Value("${db.username}")
     String user;
@@ -37,7 +36,7 @@ public class PropertyConfig {
 
     @Bean
     public FakeDataSource fakeDataSource() {
-        return new FakeDataSource(env.getProperty("USERNAME"), password, url);
+        return new FakeDataSource(user, password, url);
     }
 
     @Bean
