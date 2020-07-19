@@ -9,3 +9,9 @@ jms:
 spring:
   main:
     banner-mode: off
+
+---
+spring:
+  profiles: testingprof
+jms:
+  url: woow YAML
