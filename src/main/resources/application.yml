@@ -1,0 +1,11 @@
+db:
+  username: kasad0r
+  password: 123qwe
+  url: jdbc://test:lol/notevenworking
+jms:
+  url: testurl
+  password: password
+  username: jmsuser
+spring:
+  main:
+    banner-mode: off
